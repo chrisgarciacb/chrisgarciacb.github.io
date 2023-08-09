@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="description" content="Portfolio"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+            <label for="check" class="menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+        <div class="logo">
+            <p>PORTFOLIO</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobremi">SOBRE MI</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+            <div class="idioma">
+                <a href="index english.html"><img src="imagenes/spanish.png" class="english"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="inicio" class="inicio">
+        <div class="imagen_inicio">
+            <img src="imagenes/perfil1.png" class="perfil_inicio"/>
+        </div>
+        
+        <div class="texto_inicio">
+            <h1>Hola, me llamo <b style="color: #0026ff;">Christian García</b>.</h1>
+            <h2>Soy desarrollador web.</h2>
+            <p>Actualmente estoy cursando el grado superior de<br>Desarrollo de Aplicaciones Web.</p>
+            
+            <div class="enlaces">
+                <a href="curriculum.pdf" download><button class="cv">
+                    <p><b>DESCARGAR CV</b></p>
+                </button></a>
+                <a href="https://www.linkedin.com/in/christian-garcia-jaime/" target="_blank" class="linkedin">
+                    <i id="linkedin" class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <div id="sobremi" class="sobremi">
+        <div class="titulo">
+            <h1>SOBRE MI</h1>
+        </div>
+
+        <div class="sobremi_content">
+            <div class="imagen_sobremi">
+                <img src="imagenes/perfil2.jpg" class="perfil_sobremi"/>
+            </div>
+
+            <div class="texto_sobremi">
+                <p>Soy un estudiante a punto de cursar el segundo año del grado superior de DAW.
+                   A lo largo de mi primer año he aprendido aspectos básicos relacionados con
+                   bases de datos, desarrollo web y programación orientada a objetos. Los lenguajes
+                   que más he usado son HTML, CSS y Java. En este momento me encuentro aprendiendo
+                   JavaScript por cuenta propia.
+                </p>
+                <p>Estoy en búsqueda activa de empleo para poder aplicar lo aprendido recientemente
+                    y adquirir nuevos conocimientos así como aprender nuevos lenguajes.
+                </p>
+                <p>Me considero una persona de rápido aprendizaje y que se adapta rápido al entorno
+                    de trabajo. Puedo colaborar bien en grupo o desenvolverme en solitario.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="proyectos" class="proyectos">
+        <div class="titulo">
+            <h1>PROYECTOS</h1>
+        </div>
+
+        <div class="proyectos_content">
+            <div class="contenedor">
+                <div class="objeto"></div>
+                <div class="objeto"></div>
+                <div class="objeto"></div>
+            </div>
+            <div class="contenedor">
+                <div class="objeto"></div>
+                <div class="objeto"></div>
+                <div class="objeto"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacto" class="contacto">
+        <div class="titulo">
+            <h1>CONTACTO</h1>
+        </div>
+
+        <div class="contacto_content">
+            <form action="https://formsubmit.co/christiangarciajaime@gmail.com" method="POST">
+                <div class="input-group">
+    
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+    
+                    <input class="btn" type="submit" value="Enviar">
+    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portfolio.html">
+                    <input type="hidden" name="_captcha" value="false">
+    
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <p>©2023, Christian García</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/300e0abc4a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
