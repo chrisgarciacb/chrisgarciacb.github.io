@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style_portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>PORTFOLIO</p>
+        </div>
+        
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+
+        <nav id="nav" class="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-x"></i></button>
+            <ul class="nav-list">
+                <li id="seccion1"><a href="#inicio">INICIO</a></li>
+                <li id="seccion2"><a href="#sobremi">SOBRE MI</a></li>
+                <li id="seccion3"><a href="#proyectos">PROYECTOS</a></li>
+                <!--<li><a href="#contacto">CONTACTO</a></li>-->
+                <li>
+                    <div class="idioma">
+                    <a href="index_english.html"><img src="imagenes/english.png" class="imagen-idioma"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="inicio" class="contenedor">
+        <div class="imagen-inicio">
+            <img src="imagenes/perfil1.png" class="foto-inicio"/>
+        </div>
+        <div class="texto-inicio">
+            <h1>Hola, me llamo <b style="color: #0026ff;">Christian García</b>.</h1><br>
+            <h2>Soy desarrollador web.</h2><br>
+            <p>Actualmente alumno en prácticas en el grado de<br>Desarrollo de Aplicaciones Web.</p>
+            <div class="botones">
+                <a href="cv_es.pdf" download><button class="cv">
+                    <p><b>DESCARGAR CV</b></p>
+                </button></a>
+                <a href="https://www.linkedin.com/in/christian-garcia-jaime/" target="_blank" class="linkedin">
+                    <i id="linkedin" class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobremi" class="contenedor curvo">
+        <div class="titulo">
+            <h1>SOBRE MI</h1>
+        </div>
+        <div class="contenido-sobremi">
+            <div class="imagen-sobremi">
+                <img src="imagenes/perfil2.jpg" class="foto-sobremi"/>
+            </div>
+            <div class="texto-sobremi">
+                <p>Soy un estudiante que recién empieza en prácticas tras terminar los estudios.
+                    A lo largo del grado he aprendido aspectos básicos relacionados con
+                    bases de datos, desarrollo web y programación orientada a objetos. Los lenguajes
+                    que más he usado son HTML, CSS, JavasCript, PHP y Java.
+                 </p>
+                 <p>Estoy en búsqueda activa de empleo para poder aplicar lo aprendido recientemente
+                     y adquirir nuevos conocimientos así como aprender nuevos lenguajes.
+                 </p>
+                 <p>Me considero una persona de rápido aprendizaje y que se adapta rápido al entorno
+                     de trabajo. Puedo colaborar bien en grupo o desenvolverme en solitario.
+                 </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="proyectos" class="contenedor">
+        <div class="titulo">
+            <h1>PROYECTOS</h1>
+        </div>
+        <div class="enlaces-proyectos">
+            <div class="objeto">
+                <div id="proyecto1" class="portada">
+                    <a href="calculadora/index_calculadora.html" target="_blank"><img src="imagenes/calculadora.jpg" class="imagen-proyecto"></a>
+                </div>
+                <div class="texto-proyecto">
+                    <p>CALCULADORA</p>
+                </div>
+            </div>
+            <div class="objeto">
+                <div id="proyecto2" class="portada">
+                    <a href="listatareas/index_listatareas.html" target="_blank"><img src="imagenes/listatareas.jpg" class="imagen-proyecto"></a>
+                </div>
+                <div class="texto-proyecto">
+                    <p>LISTA DE TAREAS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="contacto" class="contenedor curvo">
+        <div class="titulo">
+            <h1>CONTACTO</h1>
+        </div>
+        <div class="contenido-contacto">
+            <p><i class="fa-brands fa-whatsapp iconos"></i> +34 605 260 665</p>
+            <br>
+            <p><i class="fa-regular fa-envelope iconos"></i> christiangarciajaime@gmail.com</p>
+        </div>
+    </div>-->
+
+    <footer>
+        <p>©2024, Christian García</p>
+    </footer>
+    
+    <script src="script_portofolio.js"></script>
+    <script src="https://kit.fontawesome.com/300e0abc4a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
